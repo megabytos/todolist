@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />    
+    <title>Todo List</title>
+  </head>
+  <body>
+    <div class="js-options-status options-status">
+      <button data-action="all">All</button>
+      <button data-action="progress">In progress</button>
+      <button data-action="done">Done</button>
+      <button data-action="low">Low</button>
+      <button data-action="medium">Medium</button>
+      <button data-action="hight">Hight</button>
+    </div>
+    <form class="add-task js-add-task">
+      <input type="text" name="input" />
+      <select name="priority">
+        <option value="low">Low</option>
+        <option value="medium">Medium</option>
+        <option value="hight">Hight</option>
+      </select>
+      <button type="submit">Submit</button>
+    </form>
+    <ul class="list js-list"></ul>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

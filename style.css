@@ -1,0 +1,114 @@
+.add-task {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  margin: 20px;
+}
+
+.add-task input,
+.add-task select,
+.add-task button {
+  margin-bottom: 10px;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.add-task select {
+  width: 100%;
+}
+
+.add-task button {
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-task button:hover {
+  background-color: #45a049;
+}
+
+.list {
+  list-style-type: none;
+  padding: 0;
+  max-width: 400px;
+  margin: 20px;
+}
+
+.list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.list h2 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.list h3 {
+  margin: 0;
+  font-size: 16px;
+  color: #555;
+}
+
+.list button {
+  padding: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+  border-radius: 3px;
+  outline: none;
+}
+
+.list .js-done {
+  background-color: #4caf50;
+  color: white;
+  margin-right: 5px;
+}
+
+.list .js-remove {
+  background-color: #f44336;
+  color: white;
+}
+
+.list button:hover {
+  opacity: 0.8;
+}
+
+.mark-done {
+  text-decoration: line-through;
+  background-color: rgba(0, 255, 0, 0.5);
+}
+
+.options-status {
+  display: flex;
+  gap: 10px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.options-status button {
+  padding: 10px;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #3498db;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.options-status button:hover {
+  background-color: #2980b9;
+}
+
+.active {
+  background-color: #4caf50;
+}
